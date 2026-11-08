@@ -219,6 +219,17 @@ code{font-family:ui-monospace,"Cascadia Code",Consolas,monospace;font-size:.85em
 .landing-eyebrow .ml{font-family:var(--f-ml);font-size:clamp(14px,3.6vw,18px);color:var(--gold-lt);letter-spacing:.02em}
 .landing-eyebrow .en{font-size:clamp(9.5px,2.4vw,11.5px);letter-spacing:.32em;text-transform:uppercase;color:rgba(251,247,239,.62)}
 
+/* Family heading, as on the printed invitation */
+.family-title{display:flex;flex-direction:column;align-items:center;text-align:center;margin:0 auto}
+.family-title__name{font-family:var(--f-ml);font-weight:700;font-size:clamp(20px,5.6vw,27px);line-height:1.5}
+.family-title__line{font-family:var(--f-ml);font-weight:600;font-size:clamp(15px,4.1vw,20px);line-height:1.55}
+.family-title__en{margin-top:6px;max-width:min(84vw,420px);font-size:clamp(9px,2.3vw,11px);line-height:1.6;letter-spacing:.14em;text-transform:uppercase;text-wrap:balance}
+.family-title--cover{margin-top:14px;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.75),0 0 20px rgba(0,0,0,.5);animation:riseIn 1.5s .5s var(--ease) both}
+.family-title--cover .family-title__name{color:var(--gold-lt)}
+@media (max-height:600px){.family-title--cover{margin-top:8px}.family-title--cover .family-title__en{display:none}}
+.family-title--section{margin-bottom:12px;color:#8B1A2A}
+.family-title--section .family-title__en{color:#8a6a24}
+
 .landing-inner .divider{animation:riseIn 1.5s .6s var(--ease) both}
 
 .landing-names{
